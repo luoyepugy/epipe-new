@@ -1,0 +1,31 @@
+
+@import other
+
+// 面包屑（当前位置）
+//
+// @content扩展自定义样式
+//
+
+=breadcrumb($bread-active-color, $bread-link-color)
+  .breadcrumb
+    font-size: $font-size
+    line-height: $font-size * 2
+    
+    li
+      +inline-block
+      &:first-child:before
+        content: ""
+      &:before
+        content: ">"
+        padding: 0 5px
+        color: $bread-active-color
+    a
+      color: $bread-link-color
+      text-decoration: none
+      &:hover
+        color: darken($bread-link-color, 10%)
+    .active
+      color: $bread-active-color
+
+    @content
+  

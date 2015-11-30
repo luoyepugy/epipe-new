@@ -1,0 +1,36 @@
+
+// 表格内容文本居中对齐
+//
+// 参数为（第一行的背景色，第二行的背景色）
+// @content扩展自定义样式
+//
+  
+=table
+  width: 100%
+
+  th
+    text-align: center
+    padding: .8em 0
+    vertical-align: middle
+
+  td
+    padding: .8em 0
+    vertical-align: middle
+
+  @content
+
+
+
+// 斑马纹表格
+//
+// 参数为（第一行的背景色，第二行的背景色）
+// @content扩展自定义样式
+//
+
+=table-zebra($even-color, $odd-color)
+  background-color: $even-color
+
+  tr:nth-of-type(even)
+    background-color: $odd-color
+
+  @content

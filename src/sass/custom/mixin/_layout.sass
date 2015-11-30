@@ -1,0 +1,21 @@
+
+// layout-fixed
+// 固定布局
+//
+// 参数为（宽度）
+// @content扩展自定义样式
+//
+
+=fixed-layout($width, $location)
+  @if $location == top
+    +position(fixed)
+  @else if $location == left
+    +position(fixed)
+  @else if $location == bottom
+    +position(fixed, down)
+  @else
+    +position(fixed, down)
+
+  z-index: 100
+  width: $width
+  @content

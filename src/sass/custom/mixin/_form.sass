@@ -1,0 +1,33 @@
+
+// 编辑类型表单，左侧为label，右侧为input或button
+//
+// 参数依次为（左侧宽度，右侧宽度）
+//
+=form($leftwidth, $rightwidth) 
+  display: table
+
+  .label 
+    width: $leftwidth
+    text-align: right
+    padding-right: 10px
+    display: table-cell
+    vertical-align: middle
+  
+  .label-content 
+    width: $rightwidth
+    display: table-cell
+    vertical-align: middle
+  
+// 多行文本框
+=textarea($width: 100%) 
+  padding-left: 5px
+  width: $width
+  outline: none
+
+
+
+// 下拉选择框
+=select($height) 
+  @include line-height($height)
+  outline: none
+

@@ -1,0 +1,201 @@
+
+@import ../custom/mixin
+
+// owl图片
+.owl-carousel
+  img
+    width: 100%
+
+// banner图右边的内容块
+.bannerR-title
+  font-size: 20px
+  text-align: center
+  line-height: 2
+
+// 项目招标类似标题
+.industry-title
+  border-top: 2px solid #ff6c21
+  position: relative
+  margin-bottom: 15px
+  h3
+    +inside-center(150px, 35px)
+    +skin-basic(#ff6c21, #fff)
+    margin: 0
+    font-size: 18px
+  .more
+    font-size: 13px
+    color: gray
+    +position-basic(absolute, top, 12px, right, 0)
+
+// 招投标
+
+
+// 行业标准
+.trade-title 
+  a
+    padding: 3px 1em
+    display: inline-block
+    color: #fff
+  .link-a
+    background: #ffae00
+    &:hover
+      +skin-basic(darken(#ffae00, 5%), #fff)
+  .link-b
+    background: #1ec9b7
+    &:hover
+      +skin-basic(darken(#1ec9b7, 5%), #fff)
+
+// 项目招标
+.bid-hot
+  .title 
+    font-size: 18px
+    line-height: 2
+    +overflow(ellipsis)
+  li
+    margin-bottom: 10px
+.bid-list
+  li
+    padding-right: 110px
+
+// 知识百科
+.lore-list
+  border-top: 1px dashed #999
+  li
+    padding-right: 40px
+
+// 企业入驻
+.settled
+  border-right: 1px solid #e3e3e3
+  border-bottom: 1px solid #e3e3e3
+  margin-left: 0
+  margin-right: 0
+  div
+    border-left: 1px solid #e3e3e3
+    border-top: 1px solid #e3e3e3
+
+// 技术求助
+.skillHelp
+  position: relative
+  margin-bottom: 10px
+  .avatar
+    border-radius: 25px
+    +size(50px)
+    overflow: hidden
+    +skin-bgbd(#fff, #d6d6d6)
+    position: relative
+    z-index: 2
+    img
+      border-radius: 25px
+  .time
+    +skin-basic(#90c0db, #fff)
+    border-radius: 0 10px 10px 0
+    +inside-center(90px, 25px)
+    padding: 0 15px
+    +position-basic(absolute, left, 40px, top, 15px)
+    z-index: 1
+  .source
+    +position-basic(absolute, right, 25px, bottom, 10px)
+
+// 在建工程等
+.block-project
+  border: 1px solid #e0e0e0
+  margin-bottom: 10px
+  .title
+    border-bottom: 1px solid #e0e0e0
+    height: 30px
+    font-size: 18px
+    b
+      margin-top: 5px
+      display: block
+      padding-left: 5px
+      border-left: 5px solid #ff7300
+      font-weight: 500
+
+
+
+
+// 找物流
+$panel-border-color: #eee
+$horizontal-gatter: 15px
+$epipe-gatter: 15px
+
+@mixin padding-vertical($padding)
+  padding-top: $padding
+  padding-bottom: $padding
+@mixin padding-horizontal($padding)
+  padding-left: $padding
+  padding-right: $padding
+
+.panel-logistics .control-label .icon 
+  margin-right: 5px
+  vertical-align: middle
+.s-hollow-mark 
+  background-position: 0 -19px
+  width: 14px
+.s-mark 
+  background-position: 0 -40px
+  width: 14px
+.s-notepad 
+  background-position: 0 -82px
+  width: 14px
+.s-hollow-mark, .s-mark, .s-new, .s-notepad, .s-topic 
+  background-image: url(../../images/spritesheet_index.png)
+  height: 16px
+  background-repeat: no-repeat
+.panel-logistics
+  padding-bottom: $horizontal-gatter
+  position: relative
+.exchange
+  position: absolute
+  right: 0
+  top: 14px
+  width: 10px
+  height: 50px
+  border: 1px solid #e6e6e6
+  border-left-width: 0
+  > a
+    position: absolute
+    top: 15px
+    margin-left: 2px
+    display: block
+    width: 17px
+    text-align: center
+    text-decoration: none
+    color: #fff
+    background-color: #ccc
+.form-group
+  margin-bottom: 10px
+.control-label
+  +padding-horizontal(0)
+  text-align: right
+  font-weight: normal
+  .icon
+    margin-right: 5px
+    vertical-align: middle
+.tips
+  padding-left: 10px
+  color: #888
+.button-group
+  padding-right: 15px
+  text-align: right
+  .btn
+    +padding-horizontal(2em)
+    &.btn-primary
+      border-color: darken(#f25555, 7)
+      background-color: #f25555
+      &:hover
+        background-color: darken(#f25555, 5)
+      &>.glyphicon
+        margin-right: 10px
+        vertical-align: baseline
+.tooltip-inner
+  padding: 5px 15px
+  font-family: "Microsoft YaHei",SimHei,Arial,sans-serif
+h3.popover-title
+  margin: 0
+  padding: 8px 14px
+  border-left-width: 0
+  >i
+    margin-top: -4px
+    font-size: 18px
+    cursor: pointer

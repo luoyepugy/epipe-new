@@ -1,0 +1,2 @@
+/*! sdkProject 30-11-2015 */
+$(function(){$(".j-owl-bid").owlCarousel({items:2,itemsDesktop:[1170,2],itemsTablet:[970,2],itemsMobile:[750,2],autoPlay:!0,pagination:!1}),$(".j-owl-banner").owlCarousel({items:1,itemsDesktop:[1170,1],itemsTablet:[970,1],itemsMobile:[750,1],autoPlay:!0,pagination:!1})});

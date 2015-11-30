@@ -1,0 +1,32 @@
+
+// input输入框
+//
+// 参数为（宽度）
+// @content扩展自定义样式
+//
+ 
+%input-basic
+  padding-left: 5px
+  outline: none
+  border: 0
+  font-size: 1em
+
+
+=input($width)
+  @extend %input-basic
+  width: $width
+  padding: .4em
+  @content
+
+
+// input输入框
+//
+// 参数为（宽度，固定高度）
+// @content扩展自定义样式
+//
+
+=input-height($width, $height)
+  @extend %input-basic
+  width: $width
+  +line-height($height)
+  @content
