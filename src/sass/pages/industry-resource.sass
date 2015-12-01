@@ -13,7 +13,7 @@
   line-height: 2
 
 // 项目招标类似标题
-.industry-title
+.title-topBorder
   border-top: 2px solid #ff6c21
   position: relative
   margin-bottom: 15px
@@ -26,8 +26,6 @@
     font-size: 13px
     color: gray
     +position-basic(absolute, top, 12px, right, 0)
-
-// 招投标
 
 
 // 行业标准
@@ -61,7 +59,7 @@
 .lore-list
   border-top: 1px dashed #999
   li
-    padding-right: 40px
+    padding-right: 50px
 
 // 企业入驻
 .settled
@@ -78,23 +76,43 @@
   position: relative
   margin-bottom: 10px
   .avatar
-    border-radius: 25px
-    +size(50px)
-    overflow: hidden
-    +skin-bgbd(#fff, #d6d6d6)
     position: relative
+    border-radius: 30px
+    +size(57px)
+    +skin-bgbd(#fff, #d6d6d6)
     z-index: 2
+    text-align: center
+    background: #fff
+    &:before,
+    &:after
+      width: 0
+      height: 0
+      border-left: 7px solid transparent
+      border-right: 7px solid transparent
+      content: ""
+      position: absolute
+    &:before
+      margin-left: 18px
+      margin-top: 55px
+      border-top: 7px solid #d6d6d6
+    &:after
+      margin-left: -32px
+      margin-top: 54px
+      border-top: 7px solid #fff
     img
       border-radius: 25px
+      position: relative
+      top: 2px
+      z-index: 2
   .time
     +skin-basic(#90c0db, #fff)
-    border-radius: 0 10px 10px 0
+    border-radius: 0 15px 15px 0
     +inside-center(90px, 25px)
     padding: 0 15px
     +position-basic(absolute, left, 40px, top, 15px)
     z-index: 1
   .source
-    +position-basic(absolute, right, 25px, bottom, 10px)
+    +position-basic(absolute, right, 25px, bottom, 15px)
 
 // 在建工程等
 .block-project
@@ -112,16 +130,8 @@
       font-weight: 500
 
 
-
-
 // 找物流
-$panel-border-color: #eee
 $horizontal-gatter: 15px
-$epipe-gatter: 15px
-
-@mixin padding-vertical($padding)
-  padding-top: $padding
-  padding-bottom: $padding
 @mixin padding-horizontal($padding)
   padding-left: $padding
   padding-right: $padding

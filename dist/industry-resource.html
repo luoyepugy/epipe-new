@@ -8,7 +8,7 @@
     <meta name="baidu-site-verification" content="e7Z7MQMmkW" />
     <!--改版后css Star-->
     <link href="../lib/bootstrap/css/bootstrap.css" rel="stylesheet"/>
-    <link href="//at.alicdn.com/t/font_1447378042_4813578.css" rel="stylesheet" /> 
+<!--     <link href="//at.alicdn.com/t/font_1447378042_4813578.css" rel="stylesheet" />  -->
     <link href="../lib/owl-carousel/owl-carousel.css" rel="stylesheet" />
     <link href="css/style-common.min.css" rel="stylesheet" />
     <!--[if lt IE 9]>
@@ -17,7 +17,8 @@
     <![endif]-->
     <!--改版后css End-->
     <script src="../lib/jquery.min.js"></script>
-    <!-- <script src="js/style-common.min.js"></script> -->
+    <script src="../lib/fl.linkage.js"></script>
+    <script src="js/style-common.min.js"></script>
     <script src="js/industry-resource.js"></script>
 
 
@@ -59,84 +60,84 @@
                 </div>
             </div>
             <!-- /banner图 -->
-            <div class="row">
+            <div class="row mt20">
                 <!-- 找物流 -->
-                <div class="col-xs-12 col-md-4 mt20 mb20" id="logistics">
-                <div class="panel-primary panel-logistics">
-                    <h3>找物流</h3>
-                    <div class="j-logistics">
-                        <form class="form-horizontal" action="">
-                            <div class="form-group">
-                                <label class="col-xs-2 control-label" for="loading"><i class="icon s-hollow-mark"></i>装点</label>
-                                <div class="col-xs-9" id="loadingWrap">
-                                    <input type="text" class="form-control linkage-input j-input" id="loading" name="logistics-loading" placeholder="选择装点" readonly="readonly" required>
-                                    <div class="exchange"><a href="javascript:;" class="j-exchange">换</a></div>
-                                    <div class="linkage-wrap">
-                                        <div class="linkage j-linkage">
-                                            <div class="linkage-tab">
-                                                <ul class="nav nav-tabs">
-                                                    <li class="active">
-                                                        <a class="j-value-prov" href="#lLoadingProv" data-toggle="tab"><em class="value j-value"></em><i></i></a>
-                                                    </li>
-                                                    <li>
-                                                        <a class="j-value-city" href="#lLoadingCity" data-toggle="tab"><em class="value j-value"></em><i></i></a>
-                                                    </li>
-                                                </ul>
-                                            </div>
-                                            <div class="linkage-content tab-content">
-                                                <div class="tab-pane active j-prov" id="lLoadingProv"></div>
-                                                <div class="tab-pane j-city" id="lLoadingCity"></div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="form-group">
-                                <label class="col-xs-2 control-label" for="unloading"><i class="icon s-mark"></i>卸点</label>
-                                <div class="col-xs-9" id="unloadingWrap">
-                                    <input type="text" class="form-control linkage-input j-input" id="unloading" name="logistics-unloading" placeholder="选择卸点" readonly="readonly" required>
-                                    <div class="linkage-wrap">
-                                        <div class="linkage j-linkage">
-                                            <div class="linkage-tab">
-                                                <ul class="nav nav-tabs">
-                                                    <li class="active">
-                                                        <a class="j-value-prov" href="#lunLoadingProv" data-toggle="tab"><em class="value j-value"></em><i></i></a>
-                                                    </li>
-                                                    <li class="">
-                                                        <a class="j-value-city" href="#lunLoadingCity" data-toggle="tab"><em class="value j-value"></em><i></i></a>
-                                                    </li>
-                                                </ul>
-                                            </div>
-                                            <div class="linkage-content tab-content">
-                                                <div class="tab-pane active j-prov" id="lunLoadingProv"></div>
-                                                <div class="tab-pane j-city" id="lunLoadingCity"></div>
+                <div class="col-xs-12 col-md-4" id="logistics">
+                    <div class="panel-logistics">
+                        <h3 class="title-leftBorder">找物流</h3>
+                        <div class="j-logistics">
+                            <form class="form-horizontal" action="">
+                                <div class="form-group">
+                                    <label class="col-xs-2 control-label" for="loading"><i class="icon s-hollow-mark"></i>装点</label>
+                                    <div class="col-xs-9" id="loadingWrap">
+                                        <input type="text" class="form-control linkage-input j-input" id="loading" name="logistics-loading" placeholder="选择装点" readonly="readonly" required>
+                                        <div class="exchange"><a href="javascript:;" class="j-exchange">换</a></div>
+                                        <div class="linkage-wrap">
+                                            <div class="linkage j-linkage">
+                                                <div class="linkage-tab">
+                                                    <ul class="nav nav-tabs">
+                                                        <li class="active">
+                                                            <a class="j-value-prov" href="#lLoadingProv" data-toggle="tab"><em class="value j-value"></em><i></i></a>
+                                                        </li>
+                                                        <li>
+                                                            <a class="j-value-city" href="#lLoadingCity" data-toggle="tab"><em class="value j-value"></em><i></i></a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                                <div class="linkage-content tab-content">
+                                                    <div class="tab-pane active j-prov" id="lLoadingProv"></div>
+                                                    <div class="tab-pane j-city" id="lLoadingCity"></div>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
-                            </div>
-                            <div class="form-group">
-                                <label class="col-xs-2 control-label" for="unloading"><i class="icon s-notepad"></i>货物</label>
-                                <div class="col-xs-9 col-sm-4">
-                                    <input type="text" class="form-control" id="logiCargo" name="logistics-cate" placeholder="填写大类">
+                                <div class="form-group">
+                                    <label class="col-xs-2 control-label" for="unloading"><i class="icon s-mark"></i>卸点</label>
+                                    <div class="col-xs-9" id="unloadingWrap">
+                                        <input type="text" class="form-control linkage-input j-input" id="unloading" name="logistics-unloading" placeholder="选择卸点" readonly="readonly" required>
+                                        <div class="linkage-wrap">
+                                            <div class="linkage j-linkage">
+                                                <div class="linkage-tab">
+                                                    <ul class="nav nav-tabs">
+                                                        <li class="active">
+                                                            <a class="j-value-prov" href="#lunLoadingProv" data-toggle="tab"><em class="value j-value"></em><i></i></a>
+                                                        </li>
+                                                        <li class="">
+                                                            <a class="j-value-city" href="#lunLoadingCity" data-toggle="tab"><em class="value j-value"></em><i></i></a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                                <div class="linkage-content tab-content">
+                                                    <div class="tab-pane active j-prov" id="lunLoadingProv"></div>
+                                                    <div class="tab-pane j-city" id="lunLoadingCity"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
-                                <div class="form-group visible-xs"></div>
-                                <label for="" class="col-xs-2 col-sm-1 control-label">吨位</label>
-                                <div class="col-xs-9 col-sm-4"><input type="text" id="logiTonnage" class="form-control" name="logistics-number" placeholder="填写吨位"></div>
-                            </div>
-                            <p class="col-sm-offset-2 tips" name="logistics-tips" data-tips="我们的参考价来自真实订单成交数据">我们的参考价来自真实订单成交数据</p>
-                            <div class="button-group">
-                                <span id="checkFreight" name="findLogistics" data-type="查运价" class="btn btn-primary" data-loading-text="查询中..." autocomplete="off"><i class="glyphicon glyphicon-search"></i>查运价</span>
-                                <span id="checkFreight" name="findLogistics" data-type="找车" class="btn btn-default" data-loading-text="查询中..." autocomplete="off">帮我找车</span>
-                            </div>
-                        </form>
+                                <div class="form-group">
+                                    <label class="col-xs-2 control-label" for="unloading"><i class="icon s-notepad"></i>货物</label>
+                                    <div class="col-xs-9 col-sm-4">
+                                        <input type="text" class="form-control" id="logiCargo" name="logistics-cate" placeholder="填写大类">
+                                    </div>
+                                    <div class="form-group visible-xs"></div>
+                                    <label for="" class="col-xs-2 col-sm-1 control-label">吨位</label>
+                                    <div class="col-xs-9 col-sm-4"><input type="text" id="logiTonnage" class="form-control" name="logistics-number" placeholder="填写吨位"></div>
+                                </div>
+                                <p class="col-sm-offset-2 tips" name="logistics-tips" data-tips="我们的参考价来自真实订单成交数据">我们的参考价来自真实订单成交数据</p>
+                                <div class="button-group">
+                                    <span id="checkFreight" name="findLogistics" data-type="查运价" class="btn btn-primary" data-loading-text="查询中..." autocomplete="off"><i class="glyphicon glyphicon-search"></i>查运价</span>
+                                    <span id="checkFreight" name="findLogistics" data-type="找车" class="btn btn-default" data-loading-text="查询中..." autocomplete="off">帮我找车</span>
+                                </div>
+                            </form>
 
+                        </div>
                     </div>
-                </div>
                 </div>
                 <!-- /找物流 -->
                 <!-- 行业标准 -->
-                <div class="col-xs-12 col-sm-6 col-md-4 mt20 mb20">
+                <div class="col-xs-12 col-sm-6 col-md-4">
                     <div class="trade-title">
                         <a class="link-a" href="/Cms-Doc-Index/xingyebiaozhun">行业标准</a>
                     </div>
@@ -178,9 +179,8 @@
                 </div>
                 <!-- /行业标准 -->
                 <!-- 招投标 -->
-                <div class="col-xs-12 col-sm-6 col-md-4 panel-right mt20 mb20">
-                <div class="panel-primary panel-bid">
-                    <h3>招投标</h3>
+                <div class="col-xs-12 col-sm-6 col-md-4">
+                    <h3 class="title-leftBorder">招投标</h3>
                     <div class="owl-carousel j-owl-bid owl-bid">
                         <div class="mr5 pr">
                             <a href="http://www.epipe.cn/Cms-Doc-BiddingIndex/guandaogongcheng-913"><img src="images/bid.jpg" alt="" class="img-responsive"></a>
@@ -198,16 +198,14 @@
                     <ul class="squareList" name='LogonAuthority'>
                         <li><a href="/Cms-Doc-Details/dixiaguanlang-guandaogongcheng ">【河南】焦作市城市地下综合管廊工程规划项目招标公告</a></li>
                         <li><a href="/Cms-Doc-Details/dixiaguanwang-guandaogongcheng ">【河北】燕山大学全校园地下管网测绘工程公开招标公告</a></li>
-                        <li><a href="/Cms-Doc-Details/dixiaguanwang-guandaogongcheng ">【河北】燕山大学全校园地下管网测绘工程公开招标公告</a></li>
                     </ul>
-                </div>
                 </div>
                 <!-- /招投标 -->
             </div>
             <!-- 项目招标 -->
-            <div class="row">
+            <div class="row mt20">
                 <div class="col-xs-12">
-                    <div class="industry-title">
+                    <div class="title-topBorder">
                     <h3>项目招标</h3>
                     <a href="#" class="more">更多&gt;&gt;</a></div>
                 </div>
@@ -308,7 +306,7 @@
             <!-- 知识百科 -->
             <div class="row mt20">
                 <div class="col-xs-12">
-                    <div class="industry-title">
+                    <div class="title-topBorder">
                     <h3>知识百科</h3>
                     <a href="#" class="more">更多&gt;&gt;</a></div>
                 </div>
@@ -357,7 +355,7 @@
                     <div class="block-project">
                         <div class="title"><b>行业标准</b></div>
                         <div class="p5">
-                            <p class="f16 pt5 ellipsis">城市综合管廊工程投资估算指标城市综合管廊工程投资估算指标</p>
+                            <p class="f16 pt5 ellipsis"><a href="#">城市综合管廊工程投资估算指标城市综合管廊工程投资估算指标</a></p>
                             <p class="gray-small climit2">前言：为贯彻落实《国务院办公厅关于加强城市地下管线建设管理的前言：为贯彻落实《国务院办公厅关于加强城市地下管线建设管理的前言：为贯彻落实《国务院办公厅关于加强城市地下管线建设管理的</p>
                             <ul class="squareList">
                                 <li><a href="#">【广东】深圳市基金大厦博时基金大厦工程(深圳市南方博时基金大厦联合基建办公室)【广东】深圳市基金</a></li>
@@ -373,7 +371,7 @@
             <!-- 人才悬赏 -->
             <div class="row mt20">
                 <div class="col-xs-12">
-                    <div class="industry-title">
+                    <div class="title-topBorder">
                     <h3>人才悬赏</h3>
                     <a href="#" class="more">更多&gt;&gt;</a></div>
                 </div>
@@ -423,7 +421,7 @@
             <!-- 技术求助 -->
             <div class="row mt20">
                 <div class="col-xs-12">
-                    <div class="industry-title">
+                    <div class="title-topBorder">
                     <h3>技术求助</h3>
                     <a href="#" class="more">更多&gt;&gt;</a></div>
                 </div>
@@ -433,7 +431,7 @@
                     <div class="skillHelp">
                         <div class="avatar"><img class="icon50" src="images/owl_2.jpg" alt=""></div>
                         <div class="time">10天前</div>
-                        <div class="source">来自：<a href="#">优管网</a></div>
+                        <div class="source link-blue">来自：<a href="#">优管网</a></div>
                     </div>
                     <div class="ml40">
                         <p class="ellipsis"><a href="#">市政给排水管道交叉问题处理有什么方法?市政给排水管道交叉问题处理有什么方法</a></p>
@@ -444,7 +442,7 @@
                     <div class="skillHelp">
                         <div class="avatar"><img class="icon50" src="images/owl_2.jpg" alt=""></div>
                         <div class="time">10天前</div>
-                        <div class="source">来自：<a href="#">优管网</a></div>
+                        <div class="source link-blue">来自：<a href="#">优管网</a></div>
                     </div>
                     <div class="ml40">
                         <p class="ellipsis"><a href="#">市政给排水管道交叉问题处理有什么方法?</a></p>
@@ -455,7 +453,7 @@
                     <div class="skillHelp">
                         <div class="avatar"><img class="icon50" src="images/owl_2.jpg" alt=""></div>
                         <div class="time">10天前</div>
-                        <div class="source">来自：<a href="#">优管网</a></div>
+                        <div class="source link-blue">来自：<a href="#">优管网</a></div>
                     </div>
                     <div class="ml40">
                         <p class="ellipsis"><a href="#">市政给排水管道交叉问题处理有什么方法?</a></p>
@@ -467,7 +465,7 @@
             <!-- 企业入驻 -->
             <div class="row mt20">
                 <div class="col-xs-12">
-                    <div class="industry-title">
+                    <div class="title-topBorder">
                     <h3>企业入驻</h3>
                     <a href="#" class="more">更多&gt;&gt;</a></div>
                 </div>
