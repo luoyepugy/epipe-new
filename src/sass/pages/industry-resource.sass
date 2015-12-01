@@ -1,6 +1,32 @@
 
 @import ../custom/mixin
 
+// xs sm
+@media (max-width: 992px)
+  .skillHelp >div:nth-last-child(1),
+  .reward >div:nth-last-child(1)
+    display: none
+
+// xs
+@media (max-width: 768px)
+  .reward >div:nth-last-child(2)
+    display: none
+
+// sm
+@media (min-width: 768px) and (max-width: 992px)
+  .settled
+    div:nth-last-child(1),
+    div:nth-last-child(2)
+      display: none
+
+// md
+@media (min-width: 992px) and (max-width: 1200px)
+  .bannerR-list
+    li:nth-last-child(1),
+    li:nth-last-child(2)
+      display: none
+
+
 // owl图片
 .owl-carousel
   img
@@ -11,6 +37,11 @@
   font-size: 20px
   text-align: center
   line-height: 2
+.bannerR-list
+  @media (min-width: 992px) and (max-width: 1200px)
+    li:nth-last-child(1),
+    li:nth-last-child(2)
+      display: none
 
 // 项目招标类似标题
 .title-topBorder
@@ -26,7 +57,6 @@
     font-size: 13px
     color: gray
     +position-basic(absolute, top, 12px, right, 0)
-
 
 // 行业标准
 .trade-title 
@@ -56,6 +86,10 @@
     padding-right: 110px
 
 // 知识百科
+.lore
+  @media (max-width: 768px)
+    >div:nth-last-child(1)
+      display: none
 .lore-list
   border-top: 1px dashed #999
   li
@@ -70,11 +104,21 @@
   div
     border-left: 1px solid #e3e3e3
     border-top: 1px solid #e3e3e3
+  @media (min-width: 768px) and (max-width: 992px)
+    div:nth-last-child(1),
+    div:nth-last-child(2)
+      display: none
+
+
 
 // 技术求助
 .skillHelp
-  position: relative
-  margin-bottom: 10px
+  @media (max-width: 992px)
+    >div:nth-last-child(1)
+      display: none
+  .user
+    position: relative
+    margin-bottom: 10px
   .avatar
     position: relative
     border-radius: 30px
